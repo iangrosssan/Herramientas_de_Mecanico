@@ -1,0 +1,33 @@
+{
+    "geometry": {
+        "length": 1.0,
+        "cross_section": "circular",
+        "dimensions": {
+            "diameter": 0.05
+        }
+    },
+    "material": {
+        "name": "Steel",
+        "E": 210e9,
+        "nu": 0.3,
+        "rho": 7850
+    },
+    "loads": [
+        {
+            "type": "point_load",
+            "position": 0.5,
+            "magnitude": -1000,
+            "direction": "y"
+        },
+        {
+            "type": "torsion_load",
+            "position": 1.0,
+            "magnitude": 500
+        },
+        {
+            "type": "axial_load",
+            "position": 1.0,
+            "magnitude": 20000
+        }
+    ]
+}

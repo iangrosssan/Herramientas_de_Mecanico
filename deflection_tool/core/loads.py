@@ -18,14 +18,6 @@ class PointLoad(Load):
         super().__init__(position, magnitude, "point")
         self.direction = direction
 
-    def moment_contribution(self, x, L):
-        # Moment M(x) caused by a point load P at position 'a'
-        # For a simply supported beam, reaction forces must be calculated first.
-        # However, for general superposition, it's easier to handle this in the solver
-        # by aggregating all loads.
-        # This method might just return the raw load info for the solver to use.
-        pass
-
 class DistributedLoad(Load):
     def __init__(self, start_pos, end_pos, magnitude):
         super().__init__(start_pos, magnitude, "distributed")
@@ -35,3 +27,28 @@ class MomentLoad(Load):
     def __init__(self, position, magnitude, axis='z'):
          super().__init__(position, magnitude, "moment")
          self.axis = axis
+
+class TorsionLoad(Load):
+    """
+    Torque T applied at a specific position.
+    """
+    def __init__(self, position, magnitude):
+        super().__init__(position, magnitude, "torsion")
+
+class AxialLoad(Load):
+    """
+    Axial force P applied at a specific position.
+    Positive magnitude = Tension? (Convention needs to be defined in solver)
+    """
+    def __init__(self, position, magnitude):
+        super().__init__(position, magnitude, "axial")
+
+class ParametricLoad(Load):
+    """
+    Distributed load defined by a function string (e.g., '100*x' or 'sin(x)').
+    """
+    def __init__(self, start_pos, end_pos, function_string):
+        # Magnitude is dynamic, so we might store 0 or max/avg
+        super().__init__(start_pos, 0, "parametric")
+        self.end_pos = end_pos
+        self.function_string = function_string
