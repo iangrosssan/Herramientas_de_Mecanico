@@ -1,0 +1,5 @@
+This is a routine update for essentials for consumers.
+Update the following
+readme.md
+requirements.txt
+structure.txt

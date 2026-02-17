@@ -18,12 +18,14 @@ Archivo detallado para el cálculo y diseño de engranes.
 ### 3. Deflection Tool (`deflection_tool`)
 **Ubicación:** `deflection_tool/`
 **Estado:** *Activo*
+**Resultados de Validación:** `deflection_tool/VALIDATED_RESULTS.md/` (Directorio de reportes y notebooks)
 
 Un paquete de Python modular para el cálculo de deflexión en vigas y ejes.
 
 **Características:**
 - **Entrada basada en JSON:** Defina geometría, materiales y cargas en archivos JSON claros y legibles.
 - **Base de Datos de Materiales:** Soporte integrado para materiales estándar (ej. AISI 4140) y personalizados.
+- **Última Verificación:** *Exitosa* (Verificado manualmente con `simple_demo.json`)
 - **Cálculo de Deflexión:** Utiliza integración numérica para determinar la deflexión vertical bajo cargas de flexión.
 - **Soporte de Escenarios:** Incluye ejemplos para ejes con engranes y vigas simples.
 

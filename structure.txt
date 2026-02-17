@@ -1,0 +1,43 @@
+.
+./update_format.txt
+./frenos&embragues.nb
+./Shingley's A-20&21 Propiedades de Materiales.pdf
+./gear_shaft.json
+./Calculo_de_Engrane.xlsx
+./LICENSE
+./requirements.txt
+./report_log.md
+./Shigley's A-9 Casos de Carga en Viga.pdf
+./deflection_tool
+./deflection_tool/Gemini 3 Pro (High) plans
+./deflection_tool/Gemini 3 Pro (High) plans/Task1.md
+./deflection_tool/Gemini 3 Pro (High) plans/ImplementationPlan1.md
+./deflection_tool/VALIDATED_RESULTS.md
+./deflection_tool/VALIDATED_RESULTS.md/comparison_circ_output.txt
+./deflection_tool/VALIDATED_RESULTS.md/comparison_rect_output.txt
+./deflection_tool/VALIDATED_RESULTS.md/comparison_report.md
+./deflection_tool/VALIDATED_RESULTS.md/pro_deflection.ipynb
+./deflection_tool/VALIDATED_RESULTS.md/proyecto_deflexion.ipynb
+./deflection_tool/VALIDATED_RESULTS.md/proyecto_deflexion_2.ipynb
+./deflection_tool/VALIDATED_RESULTS.md/readme.md
+./deflection_tool/core
+./deflection_tool/core/materials.py
+./deflection_tool/core/beam.py
+./deflection_tool/core/profiles.py
+./deflection_tool/core/solver.py
+./deflection_tool/core/loads.py
+./deflection_tool/data
+./deflection_tool/data/materials.json
+./deflection_tool/examples
+./deflection_tool/examples/comparison_circ.json
+./deflection_tool/examples/custom_beam.json
+./deflection_tool/examples/gear_shaft.json
+./deflection_tool/examples/comparison_rect.json
+./deflection_tool/examples/general_test.json
+./deflection_tool/interface
+./deflection_tool/interface/input_parser.py
+./deflection_tool/main.py
+./deflection_tool/scenarios
+./deflection_tool/scenarios/shaft_gears.py
+./readme.md
+./structure.txt
