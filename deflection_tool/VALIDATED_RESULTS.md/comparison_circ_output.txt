@@ -1,0 +1,8 @@
+Loading configuration from deflection_tool/examples/comparison_circ.json...
+Material: AISI4140 (E=210.0 GPa)
+Profile: circular (I=1.92e-08 m^4)
+Solving for deflection...
+
+Results:
+Maximum Deflection: 0.2764 mm at x = 0.112 m
+Solver calculation complete.

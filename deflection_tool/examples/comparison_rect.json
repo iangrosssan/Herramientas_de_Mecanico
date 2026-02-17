@@ -1,0 +1,29 @@
+{
+    "material": "AISI4140",
+    "geometry": {
+        "length": 1.0,
+        "cross_section": "rectangular",
+        "dimensions": {
+            "width": 0.1,
+            "height": 0.2
+        }
+    },
+    "supports": [
+        {
+            "type": "simple",
+            "position": 0.0
+        },
+        {
+            "type": "simple",
+            "position": 1.0
+        }
+    ],
+    "loads": [
+        {
+            "type": "point_load",
+            "position": 0.25,
+            "magnitude": -100000,
+            "direction": "y"
+        }
+    ]
+}

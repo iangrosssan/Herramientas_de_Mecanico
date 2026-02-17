@@ -1,0 +1,40 @@
+{
+    "material": "AISI4140",
+    "geometry": {
+        "length": 0.23,
+        "cross_section": "circular",
+        "dimensions": {
+            "diameter": 0.025
+        }
+    },
+    "supports": [
+        {
+            "type": "simple",
+            "position": 0.0
+        },
+        {
+            "type": "simple",
+            "position": 0.23
+        }
+    ],
+    "loads": [
+        {
+            "type": "point_load",
+            "position": 0.02,
+            "magnitude": -5260.82,
+            "direction": "y"
+        },
+        {
+            "type": "point_load",
+            "position": 0.09,
+            "magnitude": -1436.28,
+            "direction": "y"
+        },
+        {
+            "type": "point_load",
+            "position": 0.16,
+            "magnitude": -2107.34,
+            "direction": "y"
+        }
+    ]
+}

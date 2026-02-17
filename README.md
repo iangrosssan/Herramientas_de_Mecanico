@@ -15,17 +15,22 @@ Archivo detallado para el cálculo y diseño de engranes.
 - Soporte para Engranes Rectos.  
 - Soporte para Engranes Helicoidales.  
 
-### 3. Deflexión (En Mantenimiento)  
-**Estado:** *Temporalmente Bajo Mantenimiento*  
+### 3. Deflection Tool (`deflection_tool`)
+**Ubicación:** `deflection_tool/`
+**Estado:** *Activo*
 
-Herramienta para el cálculo de **Tensión de Von Mises** y **Deflexión Máxima Uniaxial**.  
+Un paquete de Python modular para el cálculo de deflexión en vigas y ejes.
 
-**Casos Soportados:**  
-- **Viga en Voladizo:** Superposición de Fuerza Vertical, Carga Lineal Distribuida y Momento Flector.  
-- **Viga Simplemente Apoyada:** Fuerza Puntual y Carga Distribuida (*actualmente limitada a una carga distribuida a la vez*).  
+**Características:**
+- **Entrada basada en JSON:** Defina geometría, materiales y cargas en archivos JSON claros y legibles.
+- **Base de Datos de Materiales:** Soporte integrado para materiales estándar (ej. AISI 4140) y personalizados.
+- **Cálculo de Deflexión:** Utiliza integración numérica para determinar la deflexión vertical bajo cargas de flexión.
+- **Soporte de Escenarios:** Incluye ejemplos para ejes con engranes y vigas simples.
 
-**Características:**  
-- Permite usar la tabla de descomposición e ingresar simultáneamente la sumatoria de momentos.  
+**Uso Rápido:**
+```bash
+python3 deflection_tool/main.py deflection_tool/examples/gear_shaft.json
+```
 
 ### 4. Recursos y Referencias  
 Tablas y documentos útiles del libro *Shigley's Mechanical Engineering Design*:  

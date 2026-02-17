@@ -1,0 +1,8 @@
+Loading configuration from deflection_tool/examples/comparison_rect.json...
+Material: AISI4140 (E=210.0 GPa)
+Profile: rectangular (I=6.67e-05 m^4)
+Solving for deflection...
+
+Results:
+Maximum Deflection: 0.1040 mm at x = 0.441 m
+Solver calculation complete.
