@@ -18,7 +18,7 @@ Archivo detallado para el cálculo y diseño de engranes.
 ### 3. Deflection Tool (`deflection_tool`)
 **Ubicación:** `deflection_tool/`
 **Estado:** *Activo*
-**Resultados de Validación:** `deflection_tool/VALIDATED_RESULTS.md/` (Directorio de reportes y notebooks)
+**Resultados de Validación:** `deflection_tool/validation_results/` (Directorio de reportes y notebooks)
 
 Un paquete de Python modular para el cálculo de deflexión en vigas y ejes.
 
@@ -30,8 +30,9 @@ Un paquete de Python modular para el cálculo de deflexión en vigas y ejes.
 - **Soporte de Escenarios:** Incluye ejemplos para ejes con engranes y vigas simples.
 
 **Uso Rápido:**
-```bash
-python3 deflection_tool/main.py deflection_tool/examples/gear_shaft.json
+```
+cd deflection_tool
+python3 main.py examples/gear_shaft.json
 ```
 
 ### 4. Recursos y Referencias  
@@ -44,7 +45,7 @@ Tablas y documentos útiles del libro *Shigley's Mechanical Engineering Design*:
 ### Python  
 Si desea utilizar o contribuir a las herramientas en Python, puede instalar las dependencias necesarias con:  
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
